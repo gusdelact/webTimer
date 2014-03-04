@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>webTimer</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LaunchTimer</display-name>
+    <servlet-name>LaunchTimer</servlet-name>
+    <servlet-class>mx.gob.sat.servlet.LaunchTimer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LaunchTimer</servlet-name>
+    <url-pattern>/launchtimer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para cancelar el servicio de Timer</description>
+    <display-name>StopTimer</display-name>
+    <servlet-name>StopTimer</servlet-name>
+    <servlet-class>mx.gob.sat.servlet.StopTimer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StopTimer</servlet-name>
+    <url-pattern>/stoptimer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LaunchExpressionTimer</display-name>
+    <servlet-name>LaunchExpressionTimer</servlet-name>
+    <servlet-class>mx.gob.sat.servlet.LaunchExpressionTimer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LaunchExpressionTimer</servlet-name>
+    <url-pattern>/launchexprtimer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StopExpressionTimer</display-name>
+    <servlet-name>StopExpressionTimer</servlet-name>
+    <servlet-class>mx.gob.sat.servlet.StopExpressionTimer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StopExpressionTimer</servlet-name>
+    <url-pattern>/stopexprtimer</url-pattern>
+  </servlet-mapping>
+</web-app>
